@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Club Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+     <!-- Google Fonts Link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Limelight&family=Prata&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<nav class="col-auto navbar shadow bar rounded">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+        <!-- Left Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://cdn-icons-png.flaticon.com/128/18355/18355220.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+        </a>
+
+        <!-- Tab Panes -->
+        <ul class="nav nav-tabs mx-auto">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#reg">Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#con">Contacts</a>
+            </li>
+        </ul>
+
+        <!-- Search Bar -->
+        <form class="form-inline d-flex" role="search" id="search-form">
+            <input type="search" class="form-control me-2" id="search-query" name="q" placeholder="Search..." aria-label="Search through site content" required>
+            <button class="btn rounded bg-black text-white" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!-- Tab panes -->
+
+    <!-- Home -->
+        <div class=" tab-content rounded">
+          <div class="tab-pane container active rounded" id="home"></div><br>
+            <!-- Description -->
+                <div id="home" class="col-custom container tab-pane active  mt-5 rounded"><br>
+                  <h3><strong>Welcome to Our Robotics Community!</strong></h3>
+                  <p>At WALL-EVE, we are passionate about pushing the boundaries of technology through robotics. ​Our mission is to inspire innovation and nurture talent in the fields of robotics, automation, and artificial intelligence.​ We believe that everyone should have the opportunity to explore the exciting world of robotics, whether you are a novice eager to learn or a seasoned expert looking to connect with like-minded individuals.
+
+                    Join us as we embark on a journey of discovery, collaboration, and creativity. Our platform offers a variety of resources, including hands-on workshops, webinars, and forums where enthusiasts can share their experiences and knowledge. By signing up, you will gain access to exclusive content, mentorship opportunities, and a vibrant community dedicated to advancing the field of robotics. 
+
+                    Become a part of our mission to shape the future, one robot at a time!</p><br><br>
+                </div>
+
+    <!-- Registration -->
+        <div class="btn-custom tab-pane container active mt-5 rounded" id="reg"><br>
+
+                <div class="container mt-3 mb-5 shadow ">
+                    <h2><strong>Robotics Club Registration Form</strong></h2>
+                     <form>
+                        <div class="row email mb-3"> <!--div for email-->
+                            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="row age mb-3"> <!--div for Age-->
+                            <label for="inputage" class="col-sm-2 col-form-label">Age</label>
+                            <div class="col-sm-10">
+                                <input type="age" id="inputage" class="form-control" placeholder="Age">
+                            </div>
+                        </div>
+
+                        <div class="row password mb-3"> <!--div for password-->
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>
+                        
+                        <div class="row phone-number mb-3"> <!--div for phone number-->
+                            <label for="phone-number" class="col-sm-2 col-form-label">Phone Number</label>
+                            <div class="col-sm-10">
+                                <input type="phone-number" id="inputphone-number" class="form-control" placeholder="Phone Number">
+                            </div>
+                        </div>
+
+                        <div class="row checkbox mb-3"> <!--div for checkbox-->
+                          <label for="checkbox" class="col-sm-2 col-form-label">Preffered Robotics Topic</label>
+                            <div class="">
+                                <div class="col-sm-10">
+                                  <input type="checkbox" id="option 1" name="option 1" value="Programming">
+                                  <label for="option 1"> Programming</label><br>
+                                  <input type="checkbox" id="option 2" name="option 2" value="Electronics">
+                                  <label for="option 2"> Electronics</label><br>
+                                  <input type="checkbox" id="option 3" name="option 3" value="Mechanical Design">
+                                  <label for="option 3"> Mechanical Design</label><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row remember mb-3"> <!--div for radio-->
+                          <label for="radio" class="col-sm-2 col-form-label">Robotics Experience Level</label>
+                            <div class="">
+                                  <input type="radio" id="Beginner" name="dif-level" value="Beginner">
+                                  <label for="Beginner">Beginner</label><br>
+                                  <input type="radio" id="Intermediate" name="dif-level" value="Intermediate">
+                                  <label for="Intermediate">Intermediate</label><br>
+                                  <input type="radio" id="Advanced" name="dif-level" value="Advanced">
+                                  <label for="Advanced">Advanced</label>
+                            </div>
+                        </div>
+
+                        <div class="row remember mb-3"> <!--div for selection-->
+                          <label for="project" class="col-sm-2 col-form-label">Preferred Robotics Project</label>
+                            <div class="">
+                                  <select name="choice" id="choice">
+                                    <option>Choose a project...</option>
+                                    <option value="Voice Controlled Robot">Voice Controlled Robot</option>  
+                                    <option value="Automated Mechanical Car">Automated Mechanical Car</option>
+                                    <option value="Solar Panel Charged Car">Solar Panel Charged Car</option>
+                                    <option value="Robotic Wrestling Arm">Robotic Wrestling Arm</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <div class="row remember mb-3"> <!--div for interest-->
+                               <label for="comment" class="col-sm-2 col-form-label">Statement of Interest</label>
+                                <div class="col-sm-10">
+                                <textarea id="comment" class="form-control" rows="4"></textarea>
+                            </div>
+                        </div>
+
+
+
+
+                         <div class="row remember mb-3"> 
+                            <div class="">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-dark">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+         </div><br>
+        </div>
+
+    <!-- Contacts -->
+        <div class="container-custom tab-pane container active shadow rounded" id="con">
+            
+            <div class=" container mt-5">
+              <h2 class="mb-4"><strong>Let's chat.</strong></h2>
+
+              <!-- start of form -->
+              <form>
+                <!-- Name -->
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+
+                <!-- Subject -->
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                </div>
+
+                <!-- Message -->
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-dark">Send message</button>
+              </form>
+              <br><br>
+            </div>
+
+        </div>
+
+<!-- Footer -->
+                    <footer class="mt-5">
+                   <a href="https://github.com/SGarabiles-9R/">Shalanie Lanette G. Garabiles || 9-Ruby</a>
+                    </footer>
+
+
+</body>
+</html>
